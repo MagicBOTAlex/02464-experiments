@@ -157,14 +157,15 @@ def save_individual_quiz(quiz_record):
     """Save individual quiz data to a separate CSV file"""
     # Create DataFrame from single quiz record
     df = pd.DataFrame([quiz_record])
+    dir_path = os.path.dirname(os.path.realpath(__file__))
 
     # Generate unique filename with timestamp
     # Include milliseconds for uniqueness
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S-%f")[:-3]
     hostname = socket.gethostname()
-    filename = f"./data/{hostname}_quiz_{timestamp}.csv"
+    filename = f"{dir_path}/data/{hostname}_quiz_{timestamp}.csv"
 
-    directory = "./data/"
+    directory = f"{dir_path}/data/"
     if not os.path.exists(directory):
         os.makedirs(directory)
 
