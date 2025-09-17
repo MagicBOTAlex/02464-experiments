@@ -1,0 +1,17 @@
+Free Recall
+
+20 x rep: sequential, unordered, 2 sek delay, 10 words.
+
+20 x rep: sequential, unordered, 0.75 sek delay, 10 words.  
+
+20 x rep: sequential, unordered, 2 sek delay, 10 words. + mat stykke inden der svares!
+
+20 x rep: sequential, unordered, 2 sek delay, 10 words. + 30sek ventetid inden der svares!
+
+Sequential Recall
+
+20 x rep: sequential, ordered, 2 sek delay, 10 words.
+
+20 x rep: sequential, ordered, 2 sek delay, 10 words. During every test say tah-dah-tah-dah on repeat in your head the whole time such that you cannot repeat the words internally (or externally)
+
+20 x rep: sequential, ordered, 2 sek delay, 10 words. During every test, continue tapping your fingers on the table in the ‘we will, we will rock you’ melody. 
