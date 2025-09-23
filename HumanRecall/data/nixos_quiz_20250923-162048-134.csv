@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-09-23 16:20:24,sequential,unordered,True,0.5,3,cup bus woman,room job woman,33.3,nixos

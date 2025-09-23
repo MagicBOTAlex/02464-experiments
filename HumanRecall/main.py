@@ -174,12 +174,72 @@ def save_individual_quiz(quiz_record):
     print(f"Quiz data saved to: {filename}")
 
 
+def generateMathQuestion() -> (str, int):
+    # Question as first tuple answer, second is the answer
+    operations = ['plus', 'minus', 'multiply']
+    operation = random.choice(operations)
+
+    if operation == 'plus':
+        # 4 digits: 1000-9999
+        num1 = random.randint(1000, 9999)
+        num2 = random.randint(1000, 9999)
+        answer = num1 + num2
+        question = f"{num1} + {num2}"
+
+    elif operation == 'minus':
+        # 3 digits: 100-999
+        num1 = random.randint(100, 999)
+        num2 = random.randint(100, 999)
+        # Ensure positive result by making num1 >= num2
+        if num1 < num2:
+            num1, num2 = num2, num1
+        answer = num1 - num2
+        question = f"{num1} - {num2}"
+
+    else:  # multiply
+        # 2 digits: 10-99
+        num1 = random.randint(10, 99)
+        num2 = random.randint(10, 99)
+        answer = num1 * num2
+        question = f"{num1} × {num2}"
+
+    return (question, answer)
+
+
+def doMath():
+    question, correct_answer = generateMathQuestion()
+    attempts = 0
+
+    print(f"Solve this problem: {question}")
+
+    while True:
+        attempts += 1
+        try:
+            user_answer = int(input("Your answer: "))
+
+            if user_answer == correct_answer:
+                if attempts == 1:
+                    print("Correct! Well done!")
+                else:
+                    print(f"Correct! You got it in {attempts} attempts.")
+                break
+            else:
+                print(f"Incorrect. Try again!")
+
+        except ValueError:
+            print("Please enter a valid number.")
+        except KeyboardInterrupt:
+            print("\nGoodbye!")
+            break
+
+
 def main():
     """Main program loop"""
     isFirstTime = True
     display_choice = None
     quiz_choice = None
     question_delay = None
+    mathBeforeAnswer = None
     amount = None
     while True:
         clear_console()
@@ -217,7 +277,7 @@ def main():
             print("\nSelect delay:")
             while True:
                 try:
-                    question_delay = int(input("\nDelay in seconds: "))
+                    question_delay = float(input("\nDelay in seconds: "))
                     break
                 except ValueError:
                     print("Please enter a valid number")
@@ -229,6 +289,25 @@ def main():
                     break
                 except ValueError:
                     print("Please enter a valid number")
+
+            print("\nInclude math question?")
+            while True:
+                response = input(
+                    "\nMath question before answer? (y/n) ").lower().strip()
+                if response in ['y', 'yes']:
+                    mathBeforeAnswer = True
+                    break
+                elif response in ['n', 'no']:
+                    mathBeforeAnswer = False
+                    break
+                else:
+                    print("Please select either y or n")
+
+            clear_console()
+            print()
+            print()
+            print("Starting in 2 seconds...")
+            time.sleep(2)
             isFirstTime = False
 
         # Get random words
@@ -246,6 +325,10 @@ def main():
         else:
             sequential_display(words, question_delay)
 
+        if mathBeforeAnswer:
+            doMath()  # Sorry :(
+            clear_console()
+
         # Run quiz based on choice
         quiz_type = "ordered" if quiz_choice == 1 else "unordered"
         if quiz_choice == 1:
@@ -258,6 +341,7 @@ def main():
             'timestamp': session_timestamp,
             'display_type': display_type,
             'quiz_type': quiz_type,
+            'math_question': mathBeforeAnswer,
             'delay_seconds': question_delay,
             'num_words': amount,
             'generated_words': ' '.join(words),
