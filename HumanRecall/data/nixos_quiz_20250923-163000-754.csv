@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname,failed_math_attempts
+2025-09-23 16:28:49,sequential,unordered,44 × 97,0.5,3,park party fire,park pork water,33.3,nixos,2

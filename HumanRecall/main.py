@@ -206,7 +206,8 @@ def generateMathQuestion() -> (str, int):
     return (question, answer)
 
 
-def doMath():
+def doMath() -> (str, int):
+    # The math questio and how many failed attempts
     question, correct_answer = generateMathQuestion()
     attempts = 0
 
@@ -222,7 +223,7 @@ def doMath():
                     print("Correct! Well done!")
                 else:
                     print(f"Correct! You got it in {attempts} attempts.")
-                break
+                return (question, attempts-1)
             else:
                 print(f"Incorrect. Try again!")
 
@@ -326,7 +327,7 @@ def main():
             sequential_display(words, question_delay)
 
         if mathBeforeAnswer:
-            doMath()  # Sorry :(
+            math_question, failed_attempts = doMath()  # Sorry :(
             clear_console()
 
         # Run quiz based on choice
@@ -349,6 +350,10 @@ def main():
             'score_percentage': round(score, 1),
             'hostname': socket.gethostname()
         }
+
+        if mathBeforeAnswer:
+            quiz_record["math_question"] = math_question
+            quiz_record["failed_math_attempts"] = failed_attempts
 
         # Save this quiz immediately
         save_individual_quiz(quiz_record)
