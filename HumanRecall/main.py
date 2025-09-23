@@ -176,52 +176,60 @@ def save_individual_quiz(quiz_record):
 
 def main():
     """Main program loop"""
+    isFirstTime = True
+    display_choice = None
+    quiz_choice = None
+    question_delay = None
+    amount = None
     while True:
         clear_console()
-        print("=== WORD MEMORY GAME ===")
-        print("\nDisplay Options:")
-        print("1. Full display (show all words at once)")
-        print("2. Sequential display (show words one at a time)")
+        if isFirstTime:
+            print("=== WORD MEMORY GAME ===")
+            print("\nDisplay Options:")
+            print("1. Full display (show all words at once)")
+            print("2. Sequential display (show words one at a time)")
 
-        while True:
-            try:
-                display_choice = int(input("\nChoose display type (1 or 2): "))
-                if display_choice in [1, 2]:
+            while True:
+                try:
+                    display_choice = int(
+                        input("\nChoose display type (1 or 2): "))
+                    if display_choice in [1, 2]:
+                        break
+                    else:
+                        print("Please enter 1 or 2")
+                except ValueError:
+                    print("Please enter a valid number")
+
+            print("\nQuiz Options:")
+            print("1. Ordered quiz (order matters)")
+            print("2. Unordered quiz (order doesn't matter)")
+
+            while True:
+                try:
+                    quiz_choice = int(input("\nChoose quiz type (1 or 2): "))
+                    if quiz_choice in [1, 2]:
+                        break
+                    else:
+                        print("Please enter 1 or 2")
+                except ValueError:
+                    print("Please enter a valid number")
+
+            print("\nSelect delay:")
+            while True:
+                try:
+                    question_delay = int(input("\nDelay in seconds: "))
                     break
-                else:
-                    print("Please enter 1 or 2")
-            except ValueError:
-                print("Please enter a valid number")
+                except ValueError:
+                    print("Please enter a valid number")
 
-        print("\nQuiz Options:")
-        print("1. Ordered quiz (order matters)")
-        print("2. Unordered quiz (order doesn't matter)")
-
-        while True:
-            try:
-                quiz_choice = int(input("\nChoose quiz type (1 or 2): "))
-                if quiz_choice in [1, 2]:
+            print("\nSelect amount:")
+            while True:
+                try:
+                    amount = int(input("\nWords to display: "))
                     break
-                else:
-                    print("Please enter 1 or 2")
-            except ValueError:
-                print("Please enter a valid number")
-
-        print("\nSelect delay:")
-        while True:
-            try:
-                question_delay = int(input("\nDelay in seconds: "))
-                break
-            except ValueError:
-                print("Please enter a valid number")
-
-        print("\nSelect amount:")
-        while True:
-            try:
-                amount = int(input("\nWords to display: "))
-                break
-            except ValueError:
-                print("Please enter a valid number")
+                except ValueError:
+                    print("Please enter a valid number")
+            isFirstTime = False
 
         # Get random words
         words = get_random_words(amount)
