@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-10-01 21:35:38,sequential,unordered,False,2.0,10,sun light money bread snow lake water beach game mom,mom water lake sun money light,60.0,nixos

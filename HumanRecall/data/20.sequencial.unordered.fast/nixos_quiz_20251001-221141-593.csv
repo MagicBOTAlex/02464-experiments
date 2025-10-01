@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-10-01 22:11:27,sequential,unordered,False,0.75,10,water town snow dress box hat bed team girl meat,meat team girl water,40.0,nixos

@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-10-01 21:21:37,sequential,unordered,False,2.0,10,sea phone light cake sock road mom man moon bike,mom star man watch,20.0,nixos

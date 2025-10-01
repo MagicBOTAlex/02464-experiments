@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-10-01 22:02:29,sequential,unordered,False,0.75,10,bed pen tree lake truck hill work dad star shirt,star shirt bell work,30.0,nixos

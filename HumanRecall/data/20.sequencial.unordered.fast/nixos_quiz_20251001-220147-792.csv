@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-10-01 22:01:31,sequential,unordered,False,0.75,10,cake bread ball rain wheel fire hand door chair town,door chair town ball wheel cat,50.0,nixos

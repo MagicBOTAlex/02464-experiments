@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname,failed_math_attempts
+2025-10-01 22:37:05,sequential,unordered,8620 + 4186,2.0,10,child plane wind work dad tea park toy house sun,work man boy tea,20.0,nixos,1

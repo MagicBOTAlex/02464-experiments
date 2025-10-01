@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname,failed_math_attempts
+2025-10-01 22:34:46,sequential,unordered,6615 + 4022,2.0,10,work bread book paper man pen bed shop fire road,book paper man work,40.0,nixos,0

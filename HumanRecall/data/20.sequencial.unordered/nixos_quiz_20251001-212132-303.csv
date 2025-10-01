@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-10-01 21:21:05,sequential,unordered,False,2.0,10,milk star room phone hand water house toy money watch,watch money star phone milk,50.0,nixos

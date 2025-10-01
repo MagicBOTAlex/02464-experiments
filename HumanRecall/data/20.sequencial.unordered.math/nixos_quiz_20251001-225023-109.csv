@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname,failed_math_attempts
+2025-10-01 22:49:32,sequential,unordered,1339 + 6560,2.0,10,boss chair apple bag team water city money phone dress,phone money dress,30.0,nixos,0

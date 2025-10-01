@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-10-01 21:35:03,sequential,unordered,False,2.0,10,sea dad door bank mom milk paper apple eye tree,sea tree mon dad apple bank,50.0,nixos

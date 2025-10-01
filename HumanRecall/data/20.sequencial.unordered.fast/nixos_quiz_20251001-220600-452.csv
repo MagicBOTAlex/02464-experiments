@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-10-01 22:05:45,sequential,unordered,False,0.75,10,lamp coin dad lake toy truck mom sea sun moon,mom sun sea moon,40.0,nixos

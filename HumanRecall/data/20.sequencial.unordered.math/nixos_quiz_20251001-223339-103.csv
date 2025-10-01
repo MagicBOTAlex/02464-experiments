@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname,failed_math_attempts
+2025-10-01 22:32:04,sequential,unordered,60 × 64,2.0,10,tree money wind ice egg sun mom boat star earth,mom star earth,30.0,nixos,1

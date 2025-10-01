@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-10-01 21:30:16,sequential,unordered,False,2.0,10,lock light roof fish bird phone key chair earth girl,room phone key,20.0,nixos

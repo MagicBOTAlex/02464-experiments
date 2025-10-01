@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-10-01 21:29:05,sequential,unordered,False,2.0,10,game cat wheel woman bank bag cake watch eye coat,eye coat bank game cat wheel,60.0,nixos

@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname,failed_math_attempts
+2025-10-01 22:47:02,sequential,unordered,68 × 44,2.0,10,door fish boss belt rice shop lake baby cake store,coin bag shirt cat,0.0,nixos,0

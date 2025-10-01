@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname,failed_math_attempts
+2025-10-01 22:40:22,sequential,unordered,4023 + 4045,2.0,10,party home egg box park cat wall moon hill hat,cat box wall,30.0,nixos,0

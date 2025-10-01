@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname,failed_math_attempts
+2025-10-01 22:54:43,sequential,unordered,650 - 398,2.0,10,cat rain bag toy truck roof bed book game floor,town man boy,0.0,nixos,0

@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-10-01 22:10:43,sequential,unordered,False,0.75,10,city hand tree beach coat child boy cat bank hat,cat bank hat boy city,50.0,nixos

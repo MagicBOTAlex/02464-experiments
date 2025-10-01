@@ -304,6 +304,19 @@ def main():
                 else:
                     print("Please select either y or n")
 
+            print("\n30 sec delay?")
+            while True:
+                response = input(
+                    "\nDelay before answer? (y/n) ").lower().strip()
+                if response in ['y', 'yes']:
+                    delayBeforeAnswer = True
+                    break
+                elif response in ['n', 'no']:
+                    delayBeforeAnswer = False
+                    break
+                else:
+                    print("Please select either y or n")
+
             clear_console()
             print()
             print()
@@ -325,6 +338,13 @@ def main():
             full_display(words, question_delay)
         else:
             sequential_display(words, question_delay)
+
+        if delayBeforeAnswer:
+            timeoutLeft = 30
+            while timeoutLeft > 0:
+                print(f"Waiting... ({timeoutLeft}s left)")
+                timeoutLeft -= 1
+                time.sleep(1)
 
         if mathBeforeAnswer:
             math_question, failed_attempts = doMath()  # Sorry :(
