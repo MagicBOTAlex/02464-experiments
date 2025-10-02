@@ -1,2 +1,0 @@
-timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname,failed_math_attempts
-2025-10-01 22:56:06,sequential,unordered,973 - 931,2.0,10,mom dad star ice river fish egg bird apple snow,mom dad egg bird snow,50.0,nixos,0

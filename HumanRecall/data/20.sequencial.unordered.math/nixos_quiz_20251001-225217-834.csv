@@ -1,2 +1,0 @@
-timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname,failed_math_attempts
-2025-10-01 22:50:26,sequential,unordered,67 × 33,2.0,10,shoe sock boss ball road train party paper toy baby,cat bench,0.0,nixos,2

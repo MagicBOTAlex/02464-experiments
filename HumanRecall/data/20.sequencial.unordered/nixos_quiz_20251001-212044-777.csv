@@ -1,2 +1,0 @@
-timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
-2025-10-01 21:20:07,sequential,unordered,False,2.0,10,rice paper park coat floor shoe key sock box bus,rice paper park shoe floor box,60.0,nixos

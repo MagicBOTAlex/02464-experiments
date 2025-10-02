@@ -1,2 +1,0 @@
-timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
-2025-10-01 21:24:40,sequential,unordered,False,2.0,10,phone cake plane bed rain woman girl river apple child,apple child bed rain toy,40.0,nixos

@@ -1,2 +1,0 @@
-timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname,failed_math_attempts
-2025-10-01 22:42:51,sequential,unordered,9041 + 7344,2.0,10,tree house bike bank roof ball dress eye hand rice,bike tree egg,20.0,nixos,0

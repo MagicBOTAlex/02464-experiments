@@ -1,2 +1,0 @@
-timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname,lettersOnly
-2025-10-02 11:45:19,sequential,ordered,False,2.0,10,V M U O A R G H E W,v m u x,30.0,nixos,True

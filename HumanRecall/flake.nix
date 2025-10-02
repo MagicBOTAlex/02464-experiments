@@ -10,7 +10,34 @@
         pkgs = nixpkgs.legacyPackages.${system};
         pythonPackages = pkgs.python3Packages;
         pythonEnv = pkgs.python3.withPackages (ps:
-          with ps; [
+          with ps; with pkgs; [
+            # Essential system libraries
+            glibc
+            stdenv.cc.cc.lib
+
+            # Python and UV
+            python312
+            uv
+
+            # Build tools
+            gcc
+            pkg-config
+
+            # Common dependencies
+            zlib
+            libffi
+            openssl
+            ncurses
+            readline
+            sqlite
+            tk
+            xz
+
+            # Development tools
+            git
+            curl
+            wget
+            which
             fastapi
             slowapi
             uvicorn
@@ -23,6 +50,8 @@
             python-dotenv
             colorama
             pandas
+            pyzmq
+            matplotlib
           ]);
       in
       {
@@ -60,24 +89,17 @@
             # Activate virtual environment
             source venv/bin/activate
 
+            pip install ipykernel ipywidgets notebook
+
             # Install pocketbase if not already installed
             if ! python -c "import pocketbase" 2>/dev/null; then
               echo "Installing pocketbase..."
               pip install pocketbase
             fi
 
-            alias run="uvicorn main:app --reload"
-            echo "Python FastAPI development environment"
-            echo "Python version: $(python --version)"
-            echo "Virtual environment: $(which python)"
-            echo "FastAPI available with uvicorn server"
-            echo ""
-            echo "To create a simple FastAPI app:"
-            echo "  echo 'from fastapi import FastAPI; app = FastAPI(); @app.get(\"/\"); def read_root(): return {\"Hello\": \"World\"}' > main.py"
-            echo "  run"
-            echo ""
-            echo "Available aliases:"
-            echo "  run - uvicorn main:app --reload"'';
+            python -m ipykernel install --user --name "$(basename $PWD)" --display-name "$(basename $PWD) (UV-FHS)"
+
+          '';
         };
         packages.default = pythonEnv;
       });

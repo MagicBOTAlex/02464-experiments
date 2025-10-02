@@ -1,2 +1,0 @@
-timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname,failed_math_attempts
-2025-10-01 22:44:10,sequential,unordered,953 - 562,2.0,10,team paper tea food clock lamp floor ice light shirt,ice light shirt team,40.0,nixos,0
