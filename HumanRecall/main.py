@@ -317,6 +317,22 @@ def main():
                 else:
                     print("Please select either y or n")
 
+            print("\nletters only?")
+            while True:
+                response = input(
+                    "\nuse letters instead of words? (y/n) ").lower().strip()
+                if response in ['y', 'yes']:
+                    global DICTIONARY
+                    DICTIONARY = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
+                                  "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+                    lettersOnly = True
+                    break
+                elif response in ['n', 'no']:
+                    lettersOnly = False
+                    break
+                else:
+                    print("Please select either y or n")
+
             clear_console()
             print()
             print()
@@ -368,7 +384,8 @@ def main():
             'generated_words': ' '.join(words),
             'user_input': ' '.join(user_input),
             'score_percentage': round(score, 1),
-            'hostname': socket.gethostname()
+            'hostname': socket.gethostname(),
+            'lettersOnly': lettersOnly
         }
 
         if mathBeforeAnswer:

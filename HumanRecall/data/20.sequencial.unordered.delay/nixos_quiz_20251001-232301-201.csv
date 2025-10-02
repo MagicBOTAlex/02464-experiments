@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-10-01 23:21:34,sequential,unordered,False,2.0,10,shirt car home town party mom sun bank tea path,box hat cat team,0.0,nixos

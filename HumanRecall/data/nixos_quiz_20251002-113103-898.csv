@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-10-02 11:30:28,sequential,ordered,False,2.0,10,roof boss girl fire fish river lake sun wheel path,roof boss girl fire,40.0,nixos

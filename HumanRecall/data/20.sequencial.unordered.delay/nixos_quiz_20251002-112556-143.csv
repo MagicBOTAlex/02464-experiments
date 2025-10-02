@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-10-02 11:24:49,sequential,unordered,False,2.0,10,wind tree chair belt star light boat game boy key,star light box,20.0,nixos

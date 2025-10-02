@@ -1,0 +1,2 @@
+timestamp,display_type,quiz_type,math_question,delay_seconds,num_words,generated_words,user_input,score_percentage,hostname
+2025-10-01 23:20:19,sequential,unordered,False,2.0,10,earth cat hat watch dad pen egg path chair car,cat hat watch match,30.0,nixos
